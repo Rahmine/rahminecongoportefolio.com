@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+}
+
+main {
+    padding: 20px;
+}
+
+.introduction {
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact form button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.profile-image, .about-image, .skills-image, .project-image {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 10px; /* Arrondir les coins */
+    margin: 10px 0; /* Espace autour de l'image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+}
+
+
+P a.col {
+            color: #ffffff;
+            text-decoration: none;        }
+        
+       
+p a.col:visited {
+        font-weight: bold;
+        border-bottom: 2px solid #ffffff;
+        }
+
+       
+p a.col:hover {
+            color: red;
+        }
+
+
+p a.col:active {
+            font-weight: bold;
+            border-bottom: 2px solid #ffffff;
+        }     
+
+
+p.coll{
+            color white;
+        }     
+
+.couleur {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+.content {
+            color:white;
+            display: none; /* Le contenu est masqué */
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+
+        .content.show {
+            display: block; /* Montrer le contenu */
+        }
+
+ button {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;        
+            border: none;              
+            border-radius: 5px;        
+            cursor: pointer;          
+            margin-top: 10px;
+            text-align: center;
+        }
+
+.background-page {
+    background-image: url('img/p9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centre les boutons horizontalement */
+    align-items: center;     /* Centre verticalement si nécessaire */
+    flex-direction: column;  /* Mets les boutons en colonne */
+    gap: 10px;               /* Espace entre les boutons */
+    padding: 20px;
+}
+
+/* Style du carrousel */
+.carousel {
+    width: 100%; /* Largeur du carrousel */
+    max-width: 400px; /* Taille maximale du carrousel */
+    /*overflow: hidden; /* Cache les images qui débordent */*/
+    margin: 0 auto; /* Centre le carrousel */
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex; /* Aligne les images en ligne */
+    animation: slide 40s linear infinite; /* Animation de défilement infini */
+}
+
+.carousel-inner img {
+    width: 350px; /* Taille des images */
+    height: auto; /* Pour garder le ratio */
+    flex-shrink: 0; /* Chaque image garde sa taille */
+}
+
+/* Animation pour un défilement continu en boucle */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Début */
+    }
+    100% {
+        transform: translateX(-100%); /* Fin - Défiler jusqu'à la dernière image */
+    }
+}
+
+.carousel2 {
+    width: 100%; /* Largeur du carrousel */
+    max-width: 400px; /* Taille maximale du carrousel */
+    /*overflow: hidden; /* Cache les images qui débordent */*/
+    margin: 0 auto; /* Centre le carrousel */
+    position: relative;
+}
+
+.carousel-inner2 {
+    display: flex; /* Aligne les images en ligne */
+    animation: slide 40s linear infinite; /* Animation de défilement infini */
+}
+
+.carousel-inner2 img {
+    width: 350px; /* Taille des images */
+    height: auto; /* Pour garder le ratio */
+    flex-shrink: 0; /* Chaque image garde sa taille */
+}
+
+/* Animation pour un défilement continu en boucle */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Début */
+    }
+    100% {
+        transform: translateX(-100%); /* Fin - Défiler jusqu'à la dernière image */
+    }
+}
+
